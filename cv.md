@@ -32,3 +32,15 @@ Now I think it's time *to change* something in *my life* and act! So, and I'm **
 * [hexlet.io (JS basic course)](https://ru.hexlet.io/u/mike_mikelson/courses)
 * RS School "JavaScript/Front-end. Stage 0" course (in progress)
 
+
+## Skills
+
+* HTML (medium)
+* CSS (medium)
+* JS (basics)
+* Git (basics)
+
+
+## Experience
+
+Final project of IT-Academy course (five pages Web site)
