@@ -44,3 +44,37 @@ Now I think it's time *to change* something in *my life* and act! So, and I'm **
 ## Experience
 
 Final project of IT-Academy course (five pages Web site)
+
+
+## Code example
+
+A function that calculates the sum of all natural numbers less than (not inclusive) **n** (first argument), which are divisible by **a** or **b** (second and third arguments) without a remainder. **n** - can only be a natural number.
+
+*example of execution*
+```
+// 1 % 2 || 1 % 4
+// 2 % 2 || 2 % 4
+// ...
+// 9 % 2 || 9 % 4
+
+sumNum(10, 2, 4); // 20
+```
+
+*function*
+```
+const sumNum = (a, b, c) => {
+  let result = 0;
+  for (let i = 0; i < a; i++) {
+    if (i % b === 0 || i % c === 0) {
+      result += i;
+    }
+  }
+  return result;
+};
+```
+
+
+## Language
+
+* English level – A1+
+* Russian – native speaker
