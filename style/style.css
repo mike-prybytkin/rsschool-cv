@@ -1,0 +1,86 @@
+.header {
+background-color: rgb(224, 218, 218);
+width: 1300px;
+margin: auto;
+}
+
+.header-wrapper {
+    display: flex;
+    margin-top: 30px;
+}
+
+.header-content-block {
+    margin-left: 5%;
+}
+
+.photo-block img {
+    width: 250px;
+    border: black solid 10px;
+    border-bottom: solid black 80px;
+    position: relative;
+}
+.photo-block div {
+    position: absolute;
+    left: 10.7%;
+    bottom: 41%;
+    font-family: "Raleway", "Arial", sans-serif;
+    font-size: 16px;;
+    font-weight: 700;
+    background-color: #ffca05;
+    padding: 5px 10px 5px 10px;
+}
+
+.my-name {
+    font-family: "Raleway", "Arial", sans-serif;
+    font-size: 36px;;
+    font-weight: 700;
+    margin-top: 40px;
+}
+.my-name span {
+    font-family: "Raleway", "Arial", sans-serif;
+    font-size: 42px;;
+    font-weight: 500;
+}
+
+.profile-proffession {
+    font-family: "Raleway", "Arial", sans-serif;
+    font-size: 18px;;
+    font-weight: 600;
+    margin-top: 20px;
+    border: solid 5px #ffca05;
+    width: 230px;
+    background-color: #ffca05;
+    border-radius: 5px;
+}
+
+.profile {
+    font-family: "Raleway", "Arial", sans-serif;
+    font-size: 20px;;
+    font-weight: 700;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+.yellow-line {
+    width: 50px;
+    height: 4px;
+    background-color: #ffca05;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.profile-text {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-right: 5%;
+}
+.profile-text p {
+    margin-bottom: 5px;
+}
+.profile-text em {
+    font-style: italic;
+}
+.profile-text strong {
+    font-weight: 700;
+}
