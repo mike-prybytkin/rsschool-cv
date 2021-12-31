@@ -6,22 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='./style/reset_style.css' type='text/css'>
     <link rel='stylesheet' href='./style/style.css' type='text/css'>
-    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <link rel="icon" href="./assets/favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Montserrat:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <title>Prybytkin-CV</title>
 </head>
 <body>
     <header class="header">
         <div class="header-wrapper">
             <div class="photo-block">
-                <img src="./images/Mihail Prybytkin.jpg" alt="Mike Prybytkin" title="personal photo">
+                <img src="./assets/img/Mihail Prybytkin.jpg" alt="Mike Prybytkin" title="personal photo">
                 <div>Junior Frontend Developer</div>
             </div>
             <div class="header-content-block">
-                <div class="my-name">Misha <span>Prybytkin</span></div>
+                <h1 class="my-name">Misha <span>Prybytkin</span></h1>
                 <div class="profile-proffession">Junior Frontend Developer</div>
-                <div class="profile">Profile</div>
+                <h2 class="section-heading">Profile</h2>
                 <div class="yellow-line"></div>
                 <div class="profile-text">
                     <p>I work as a <em>process engineer</em> in a state company. Our company is focused on the development of optoelectronic systems. I like this job, but I feel the need for <em>new knowledge</em>, for new opportunities.</p>
@@ -32,6 +33,102 @@
             </div>
         </div>
     </header>
+
+    <main class="main">
+        <section class="main-section-1">
+            <div class="main-section-education">
+                <h2 class="section-heading">Education</h2>
+                <div class="yellow-line"></div>
+                <ul>
+                    <li>
+                        <p class="my-major">Mechatronics</p>
+                        <a class="name-of-university" href="http://www.college-ripo.by/" title="College's web site">Technical College</a>
+                        <p class="date-of-studied">2008-2012</p>
+                    </li>
+                    <li>
+                        <p class="my-major">Electronics bachelor’s degree</p>
+                        <a class="name-of-university" href="https://iti.bsuir.by/" title="University's web site">IIT BSUIR</a>
+                        <p class="date-of-studied">2012-2018</p>
+                    </li>
+                    <li>
+                        <p class="my-major">HTML/CSS/JS basic course</p>
+                        <a class="name-of-university" href="https://www.it-academy.by/" title="Academy's web site">IT-Academy</a>
+                        <p class="date-of-studied">2020-2021</p>
+                    </li>
+                    <li>
+                        <p class="my-major">JS basic course</p>
+                        <a class="name-of-university" href="https://ru.hexlet.io/my/" title="Hexlet's web site">Hexlet</a>
+                        <p class="date-of-studied">2021</p>
+                    </li>
+                    <li>
+                        <p class="my-major">JavaScript/Front-end. Stage 0</p>
+                        <a class="name-of-university" href="https://rs.school/" title="RS School's web site">RS School</a>
+                        <p class="date-of-studied">in progress</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-section-code-example">
+                <h2 class="section-heading">Code example</h2>
+                <div class="yellow-line"></div>
+                <div class="code-example">
+                    <p>
+                        A function that calculates the sum of all natural numbers less than (not inclusive) <span>n</span> (first argument), 
+                        which are divisible by <span>a</span> or <span> b </span> (second and third arguments) without a remainder. <span>n</span> - can only be a natural number.
+                    </p>
+                    <p><em>example of execution</em></p>
+                    <pre>
+                        <code>
+// 1 % 2 || 1 % 4
+// 2 % 2 || 2 % 4
+// ...
+// 9 % 2 || 9 % 4
+
+sumNum(10, 2, 4); // 20
+                        </code>
+                    </pre>
+                    <p><em>function</em></p>
+                    <pre>
+                        <code>
+const sumNum = (a, b, c) => {
+    let result = 0;
+    for (let i = 0; i < a; i++) {
+        if (i % b === 0 || i % c === 0) {
+            result += i;
+        }
+    }
+    return result;
+};
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </footer>
     
 </body>
 </html>

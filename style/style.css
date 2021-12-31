@@ -1,7 +1,11 @@
 .header {
-background-color: rgb(224, 218, 218);
-width: 1300px;
-margin: auto;
+    background-color: rgba(224, 218, 218, 0.8);
+    width: 1300px;
+    margin: auto;
+}
+.main{
+    width: 1300px;
+    margin: auto;
 }
 
 .header-wrapper {
@@ -13,16 +17,18 @@ margin: auto;
     margin-left: 5%;
 }
 
+.photo-block {
+    background-color: rgb(32, 31, 31);
+    position: relative;
+}
 .photo-block img {
     width: 250px;
-    border: black solid 10px;
-    border-bottom: solid black 80px;
-    position: relative;
+    padding: 10px;
 }
 .photo-block div {
     position: absolute;
-    left: 10.7%;
-    bottom: 41%;
+    left: 9%;
+    bottom: -3%;
     font-family: "Raleway", "Arial", sans-serif;
     font-size: 16px;;
     font-weight: 700;
@@ -53,20 +59,26 @@ margin: auto;
     border-radius: 5px;
 }
 
-.profile {
+.section-heading {
     font-family: "Raleway", "Arial", sans-serif;
     font-size: 20px;;
     font-weight: 700;
     margin-top: 40px;
     text-transform: uppercase;
 }
+.main-section-education {
+    color: white;
+    padding-left: 25px;
+    background-color: black;
+    width: 348px;
+}
 
 .yellow-line {
     width: 50px;
     height: 4px;
     background-color: #ffca05;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .profile-text {
     font-family: "Montserrat", "Arial", sans-serif;
@@ -83,4 +95,49 @@ margin: auto;
 }
 .profile-text strong {
     font-weight: 700;
+}
+
+.main-section-1 {
+    display: flex;
+}
+
+.my-major {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 7px;
+}
+.main-section-education a {
+    text-decoration: none;
+    color: #ffca05;
+}
+.name-of-university, .date-of-studied {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;;
+    font-weight: 400;
+    margin: 7px 0 7px 0;
+}
+.date-of-studied {
+    padding-bottom: 20px;
+}
+.main-section-education ul {
+    padding-right: 2%;
+}
+
+.main-section-code-example {
+    padding-left: 5%;
+}
+.code-example p {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 600;
+}
+.code-example p span {
+    background-color: #ffca05;
+    line-height: 24px;
+    border: solid 1px black
+}
+.code-example p em {
+    font-weight: 400;
+    font-style: italic;
 }
