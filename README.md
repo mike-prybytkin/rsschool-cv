@@ -1,1 +1,1 @@
-# rsschool-cv
+https://mike-prybytkin.github.io/rsschool-cv/
