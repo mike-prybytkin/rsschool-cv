@@ -4,10 +4,217 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='style/style.css' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel='stylesheet' href='./style/reset_style.css' type='text/css'>
+    <link rel='stylesheet' href='./style/style.css' type='text/css'>
+    <link rel="icon" href="./assets/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Montserrat:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <title>Prybytkin-CV</title>
 </head>
 <body>
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="photo-block">
+                <img src="./assets/img/Mihail-Prybytkin.jpg" alt="Mike Prybytkin" title="personal photo">
+                <div>Junior Frontend Developer</div>
+            </div>
+            <div class="header-content-block">
+                <h1 class="my-name">Misha <span>Prybytkin</span></h1>
+                <div class="profile-proffession">Junior Frontend Developer</div>
+                <h2 class="section-heading">Profile</h2>
+                <div class="yellow-line"></div>
+                <div class="profile-text">
+                    <p>I work as a <em>process engineer</em> in a state company. Our company is focused on the development of optoelectronic systems. I like this job, but I feel the need for <em>new knowledge</em>, for new opportunities.</p>
+                    <p>I became a high-level specialist, but over time I ran into the ceiling. I just want to work in a new, growing field with fun, interesting people. With all due respect, but a state company is not such a good place. I want to receive information that helps me to do more useful work and allows me <em>to be useful to other people</em>.</p>
+                    <p>I have great communication skills. I'm not afraid of great responsibility, I have the <em>to learn</em> and improve my skills. I always wanted to be a useful part of the <em>team and society</em>, I wanted to create something interesting, beautiful and valuable.</p>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="main-section-1">
+            <div class="main-section-education">
+                <h2 class="section-heading">Education</h2>
+                <div class="yellow-line"></div>
+                <ul>
+                    <li>
+                        <p class="my-major">Mechatronics</p>
+                        <a class="name-of-university" href="http://www.college-ripo.by/" title="College's web site">Technical College</a>
+                        <p class="date-of-studied">2008-2012</p>
+                    </li>
+                    <li>
+                        <p class="my-major">Electronics bachelor’s degree</p>
+                        <a class="name-of-university" href="https://iti.bsuir.by/" title="University's web site">IIT BSUIR</a>
+                        <p class="date-of-studied">2012-2018</p>
+                    </li>
+                    <li>
+                        <p class="my-major">HTML/CSS/JS basic course</p>
+                        <a class="name-of-university" href="https://www.it-academy.by/" title="Academy's web site">IT-Academy</a>
+                        <p class="date-of-studied">2020-2021</p>
+                    </li>
+                    <li>
+                        <p class="my-major">JS basic course</p>
+                        <a class="name-of-university" href="https://ru.hexlet.io/my/" title="Hexlet's web site">Hexlet</a>
+                        <p class="date-of-studied">2021</p>
+                    </li>
+                    <li>
+                        <p class="my-major">JavaScript/Front-end. Stage 0</p>
+                        <a class="name-of-university" href="https://rs.school/" title="RS School's web site">RS School</a>
+                        <p class="date-of-studied">in progress</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-section-code-example">
+                <h2 class="section-heading">Code example</h2>
+                <div class="yellow-line"></div>
+                <div class="code-example">
+                    <p>
+                        A function that calculates the sum of all natural numbers less than (not inclusive) <span>n</span> (first argument), 
+                        which are divisible by <span>a</span> or <span> b</span> (second and third arguments) without a remainder. <span>n</span> - can only be a natural number.
+                    </p>
+                    <p class="header-of-code"><em>example of execution</em></p>
+                    <pre>
+                        <code>
+// 1 % 2 || 1 % 4
+// 2 % 2 || 2 % 4
+// ...
+// 9 % 2 || 9 % 4
+
+sumNum(10, 2, 4); // 20
+                        </code>
+                    </pre>
+                    <p class="header-of-code"><em>function</em></p>
+                    <pre>
+                        <code>
+const sumNum = (a, b, c) => {
+    let result = 0;
+    for (let i = 0; i &lt; a; i++) {
+        if (i % b === 0 || i % c === 0) {
+            result += i;
+        }
+    }
+    return result;
+};
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-section-2">
+            <div class="main-section-skills">
+                <h2 class="section-heading">Skills</h2>
+                <div class="yellow-line"></div>
+                <ul>
+                    <li>
+                        <p>HTML</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>CSS</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>JS</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Git</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper-experience-language">
+                <div class="main-section-experience">
+                    <h2 class="section-heading">Experience</h2>
+                    <div class="yellow-line"></div>
+                    <p>Final project of IT-Academy course (<a href="https://github.com/mike-prybytkin/site#readme" title="repository link">five pages Web site</a>)</p>
+                </div>
+                <div class="main-section-language">
+                    <h2 class="section-heading">Language</h2>
+                    <div class="yellow-line"></div>
+                    <ul>
+                        <li>English level &mdash; A1+</li>
+                        <li>Russian &mdash; native speaker</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-contacts">
+                <div class="background-icon-contacts"></div>
+                <nav>
+                    <ul>
+                        <li>
+                            <p class="way-of-contact">Phone:</p>
+                            <i class="icon-phone icon-contacts"></i><a class="atribytes-of-contacts" href="tel:+375291590945" title="telephone">+375291590945</a>
+                        </li>
+                        <li>
+                            <p class="way-of-contact">Email</p>
+                            <i class="icon-mail icon-contacts"></i><span class="atribytes-of-contacts">prybytkin@bk.rum</span>
+                        </li>
+                        <li>
+                            <p class="way-of-contact">Minsk, Belarus</p>
+                            <i class="icon-location icon-contacts"></i><a class="atribytes-of-contacts" href="https://yandex.by/maps/geo/53177019/?ll=27.561481%2C53.902496&utm_source=main_stripe_big&z=12" title="my location">Location</a>
+                        </li>
+                        <li>
+                            <i class="icon-linkedin icon-contacts"></i><a class="way-of-contact" href="https://www.linkedin.com/in/prybytkin-mike-3a597b120/" title="my linkedin">LinkedIn</a>
+                        </li>
+                        <li>
+                            <i class="icon-github-circled icon-contacts"></i><a class="way-of-contact" href="https://github.com/mike-prybytkin" title="my GitHub">GitHub</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="wrapper-interests-footer">
+                <div class="wrapper-interests-content">
+                    <h2 class="section-heading">Interests</h2>
+                    <div class="yellow-line"></div>
+                    <ul>
+                        <li>
+                            <img src="./assets/travel.png" alt="Travel">
+                            <p>Travel</p>
+                        </li>
+                        <li>
+                            <img src="./assets/audio.png" alt="Music">
+                            <p>Music</p>
+                        </li>
+                        <li>
+                            <img src="./assets/document.png" alt="Writing">
+                            <p>Writing</p>
+                        </li>
+                        <li>
+                            <img src="./assets/chess.png" alt="Chess">
+                            <p>Chess</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="information-of-rsschool">
+                    <div class="border-decoration">
+                    <span>&copy;2022</span>
+                    <a href="https://rs.school/js/" title="RS-school link"><img src="./assets/rs_school_js.svg" alt="RS-school logo" title="RS-school"></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
     
+
 </body>
 </html>
