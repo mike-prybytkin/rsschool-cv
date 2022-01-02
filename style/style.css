@@ -3,7 +3,9 @@
     width: 1300px;
     margin: auto;
 }
-.main{
+
+.main, 
+footer {
     width: 1300px;
     margin: auto;
 }
@@ -18,13 +20,17 @@
 }
 
 .photo-block {
-    background-color: rgb(32, 31, 31);
+    flex-basis: 725px;
+    background-color: #201f1f;
     position: relative;
 }
+
 .photo-block img {
     width: 250px;
-    padding: 10px;
+    padding-top: 4%;
+    margin-left: 4%;;
 }
+
 .photo-block div {
     position: absolute;
     left: 9%;
@@ -42,6 +48,7 @@
     font-weight: 700;
     margin-top: 40px;
 }
+
 .my-name span {
     font-family: "Raleway", "Arial", sans-serif;
     font-size: 42px;;
@@ -54,7 +61,7 @@
     font-weight: 600;
     margin-top: 20px;
     border: solid 5px #ffca05;
-    width: 230px;
+    width: 240px;
     background-color: #ffca05;
     border-radius: 5px;
 }
@@ -63,14 +70,15 @@
     font-family: "Raleway", "Arial", sans-serif;
     font-size: 20px;;
     font-weight: 700;
-    margin-top: 40px;
+    padding-top: 40px;
     text-transform: uppercase;
 }
+
 .main-section-education {
-    color: white;
+    flex-basis: 450px;
+    color: #ffffff;
     padding-left: 25px;
-    background-color: black;
-    width: 348px;
+    background-color: #000000;
 }
 
 .yellow-line {
@@ -80,6 +88,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 .profile-text {
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 16px;
@@ -87,40 +96,50 @@
     line-height: 24px;
     margin-right: 5%;
 }
+
 .profile-text p {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
+
 .profile-text em {
     font-style: italic;
 }
+
 .profile-text strong {
     font-weight: 700;
 }
 
-.main-section-1 {
+.main-section-1, 
+.main-section-2 {
     display: flex;
 }
 
-.my-major {
+.my-major, 
+.main-section-skills p {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
     padding-bottom: 7px;
 }
+
 .main-section-education a {
     text-decoration: none;
     color: #ffca05;
 }
-.name-of-university, .date-of-studied {
+
+.name-of-university, 
+.date-of-studied {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;;
     font-weight: 400;
     margin: 7px 0 7px 0;
 }
+
 .date-of-studied {
     padding-bottom: 20px;
 }
+
 .main-section-education ul {
     padding-right: 2%;
 }
@@ -128,16 +147,196 @@
 .main-section-code-example {
     padding-left: 5%;
 }
+
 .code-example p {
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 600;
+    padding-bottom: 20px;
 }
+
 .code-example p span {
     background-color: #ffca05;
     line-height: 24px;
-    border: solid 1px black
+    border: solid 1px #000000;
 }
-.code-example p em {
+
+.code-example .header-of-code {
     font-weight: 400;
     font-style: italic;
+    margin: 0px;
+    padding: 0px;
 }
+
+.code-example pre {
+    margin-bottom: 0px;
+}
+
+.main-section-skills {
+    padding-left: 25px;
+    background-color: rgba(224, 218, 218, 0.8);
+    flex-basis: 272px;
+}
+
+.main-section-skills li {
+    padding-bottom: 20px;
+}
+
+.main-section-skills .progress {
+    margin-right: 20px;
+    background-color: #252323;
+    height: 10px;
+    font-size: 10px;
+}
+
+.main-section-experience p, 
+.main-section-language ul {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.wrapper-experience-language {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+}
+
+.main-section-language ul li {
+    padding-bottom: 10px;
+}
+
+.footer-wrapper {
+    display: flex;
+}
+
+.footer-contacts {
+    padding-left: 25px;
+    background-color: rgba(224, 218, 218, 0.8);
+    flex-basis: 348px;
+}
+
+.footer-contacts {
+    padding-left: 55px;
+}
+
+.footer-contacts ul {
+    margin: 30px 0 30px 0;
+}
+
+.way-of-contact {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
+}
+
+.atribytes-of-contacts {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footer-contacts a, 
+.footer-contacts span {
+    padding-left: 40px;
+    color: #000000;
+}
+
+.footer-contacts p {
+    padding-left: 55px;
+}
+
+.footer-contacts li {
+    padding-bottom: 20px;
+}
+
+.icon-contacts {
+    font-size: 20px;
+}
+
+.footer-contacts {
+    position: relative;
+    z-index: 2;
+}
+
+.background-icon-contacts {
+    position: absolute;
+    z-index: -1;
+    background-color: #ffca05;
+    width: 35px;
+    height: 240px;
+    left: 47px;
+    top: 33px;
+}
+
+.wrapper-interests-footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    width: 100%;
+}
+
+.wrapper-interests-footer li img {
+    width: 80px;
+    border: solid #000000 1px;
+    border-radius: 10%;
+    background-color: #ffca05;
+    padding: 10px;
+}
+
+.wrapper-interests-footer ul {
+    text-align: center;
+}
+
+.wrapper-interests-footer li {
+    text-align: center;
+    display: inline-block;
+    margin: 0 5% 0 5%;
+    margin-top: 20px;
+}
+
+.wrapper-interests-content ul li p {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.information-of-rsschool {
+    margin: 50px 0 50px 0;
+}
+
+.information-of-rsschool span {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: solid 2px #ffca05;
+}
+
+.information-of-rsschool img {
+    width: 100px;
+    float: right;
+    border-bottom: solid 2px #ffca05;
+}
+
+@font-face {
+    font-family: 'fontello';
+     src: url('../fonts/fontello.eot');
+     src: url('../fonts/fontello.eot') format('embedded-opentype'),
+          url('../fonts/fontello.woff') format('woff'),
+          url('../fonts/fontello.ttf') format('truetype'),
+          url('../fonts/fontello.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+font-family: "fontello";
+font-style: normal;
+font-weight: normal;
+}
+
+.icon-phone:before { content: '\e800'; } /* '' */
+.icon-mail:before { content: '\e806'; } /* '' */
+.icon-location:before { content: '\e805'; } /* '' */
+.icon-github-circled:before { content: '\f054'; } /* '' */
+.icon-linkedin:before { content: '\f0e1'; } /* 'пѓЎ' */
